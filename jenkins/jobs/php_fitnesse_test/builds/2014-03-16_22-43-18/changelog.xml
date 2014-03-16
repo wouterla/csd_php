@@ -1,0 +1,10 @@
+commit 9a16614c846d2faa5899548a2b866c0ab76fe3be
+tree 30fb55fd1e793dee03366d0aadef95c8e6ec444b
+parent 9fc821f0bbd642720d4fd480f00293c2203e633a
+author wouter <wouter@lagerweij.com> 1395009788 +0100
+committer wouter <wouter@lagerweij.com> 1395009788 +0100
+
+    First test running
+
+:100644 100644 8dc7f25c185fa3f3751d8445a966331b58801a5f 46aa42a3bad112f2e759bf9fd62db27e355fd3ff M	build.xml
+:100644 100644 1a0f3dba50d994e6942ef1888d22055a6cac2807 6807dca0468378e1f050ae694eb7e20c58cefc62 M	test/SimpleTest.php

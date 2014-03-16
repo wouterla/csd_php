@@ -1,0 +1,9 @@
+commit 3b7d031a18c2c9dbb79e73c28e3d1b859891c658
+tree c3c634adb945c17de0bb224f39ec3566aeeb4478
+parent 20682e645898b6019f73a102e22b7c9b66dc8cdb
+author wouter <wouter@lagerweij.com> 1395006360 +0100
+committer wouter <wouter@lagerweij.com> 1395006360 +0100
+
+    Added empty methods
+
+:100644 100644 1652a0ea577e9ca09cf8444620d0cbec6705931d 90c72d77b1db477541456fdf4166b92665479074 M	test/MyFixture.php

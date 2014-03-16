@@ -1,0 +1,23 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /var/lib/jenkins/jobs/php_fitnesse_test/workspace
+Fetching changes from the remote Git repository
+Fetching upstream changes from https://github.com/wouterla/php_fitnesse_test.git
+Checking out Revision 9a16614c846d2faa5899548a2b866c0ab76fe3be (origin/master)
+[workspace] $ /bin/sh -xe /tmp/hudson7445114805619962936.sh
++ phpunit --include-path ./src --log-junit phpunit.xml --coverage-clover clover.xml test
+PHPUnit 4.0.7 by Sebastian Bergmann.
+
+Configuration read from /var/lib/jenkins/jobs/php_fitnesse_test/workspace/phpunit.xml
+
+.
+
+Time: 387 ms, Memory: 8.50Mb
+
+OK (1 test, 1 assertion)
+
+Generating code coverage report in Clover XML format ... done
+Publishing Clover coverage report...
+Publishing Clover XML report...
+Publishing Clover coverage results...
+Recording test results
+Finished: SUCCESS

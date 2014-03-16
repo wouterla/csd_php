@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: nicolas
+Build-Jdk: 1.6.0_31
+Extension-Name: php
+Specification-Title: Meta-plugin for php developement, based on http:/
+ /jenkins-php.org
+Implementation-Title: php
+Implementation-Version: 1.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: php
+Long-Name: php
+Url: http://jenkins-ci.org/plugin/php/
+Plugin-Version: 1.0
+Hudson-Version: 1.424
+Jenkins-Version: 1.424
+Plugin-Dependencies: violations:0.7.11,jdepend:1.2.3,maven-plugin:1.42
+ 4,checkstyle:3.32,xunit:1.48,pmd:3.33,cloverphp:0.3.2,dry:2.33,htmlpu
+ blisher:1.0,analysis-core:1.48,plot:1.5
+Plugin-Developers: 
+

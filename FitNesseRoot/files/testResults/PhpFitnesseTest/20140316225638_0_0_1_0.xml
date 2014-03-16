@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20140201</FitNesseVersion>
+  <rootPath>PhpFitnesseTest</rootPath>
+    <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>79</runTimeInMillis>
+    <content>&lt;br/&gt;Main page for test of the &lt;a href="FitNesse"&gt;FitNesse&lt;/a&gt; integration with PHP&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</content>
+    <relativePageName>PhpFitnesseTest</relativePageName>
+    
+    
+    
+  </result>
+  
+    <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>1</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>267</totalRunTimeInMillis>
+  
+</testResults>
+

@@ -1,0 +1,9 @@
+commit 20682e645898b6019f73a102e22b7c9b66dc8cdb
+tree 20e79372ce92b6e74f46c41bfacf09daca263a54
+parent 91a14b92b83afa7edd7b4ce485f118d918fc85dd
+author wouter <wouter@lagerweij.com> 1395006092 +0100
+committer wouter <wouter@lagerweij.com> 1395006092 +0100
+
+    Added empty fixture
+
+:000000 100644 0000000000000000000000000000000000000000 1652a0ea577e9ca09cf8444620d0cbec6705931d A	test/MyFixture.php

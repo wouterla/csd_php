@@ -1,0 +1,8 @@
+
+!3 !-slim:/var/lib/fitnesse/FitNesseRoot/phpslim.phar-!
+|'''Date: '''| 10:57:54 PM (UTC) on Sunday, March 16, 2014 |
+|'''Test Page: '''|.PhpFitnesseTest|
+|'''Command: '''| !-php /var/lib/fitnesse/FitNesseRoot/phpslim.phar defaultPath  8092-! |
+|'''Exit code: '''| 0 |
+|'''Time elapsed: '''| 0.153 seconds |
+

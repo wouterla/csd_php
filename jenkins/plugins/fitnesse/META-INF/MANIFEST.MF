@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: lessonz
+Build-Jdk: 1.7.0_25
+Extension-Name: fitnesse
+Implementation-Title: fitnesse
+Implementation-Version: 1.8.1
+Plugin-Class: hudson.plugins.fitnesse.FitnessePlugin
+Group-Id: org.jenkins-ci.plugins
+Short-Name: fitnesse
+Long-Name: Hudson Fitnesse plugin
+Url: http://wiki.jenkins-ci.org/display/HUDSON/Fitnesse+Plugin
+Plugin-Version: 1.8.1
+Hudson-Version: 1.420
+Jenkins-Version: 1.420
+Plugin-Developers: timbacon:prime8:tim bacon @at@ gmail dotcom
+

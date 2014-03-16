@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='php' version='1.0'><l:dependency name='php' groupId='org.jenkins-ci.plugins' artifactId='php' version='1.0' url='http://jenkins-ci.org/plugin/php/'><l:description>Meta-plugin for php developement, based on http://jenkins-php.org</l:description></l:dependency></l:dependencies>

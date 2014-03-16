@@ -1,0 +1,9 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /var/lib/jenkins/jobs/php_fitnesse_test/workspace
+Cloning the remote Git repository
+Cloning repository https://github.com/wouterla/php_fitnesse_test.git
+Fetching upstream changes from https://github.com/wouterla/php_fitnesse_test.git
+Fetching upstream changes from https://github.com/wouterla/php_fitnesse_test.git
+Checking out Revision 91a14b92b83afa7edd7b4ce485f118d918fc85dd (origin/master)
+First time build. Skipping changelog.
+Finished: SUCCESS

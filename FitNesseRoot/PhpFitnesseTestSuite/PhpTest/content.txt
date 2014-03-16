@@ -1,0 +1,7 @@
+!path /var/lib/jenkins/jobs/php_fitnesse_test/workspace/test
+
+!|my fixture              |
+|my value|value successor?|
+|5       |6               |
+|-4      |-3              |
+|2       |3               |

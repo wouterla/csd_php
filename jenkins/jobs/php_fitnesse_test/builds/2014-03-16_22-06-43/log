@@ -1,0 +1,19 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /var/lib/jenkins/jobs/php_fitnesse_test/workspace
+Fetching changes from the remote Git repository
+Fetching upstream changes from https://github.com/wouterla/php_fitnesse_test.git
+Checking out Revision 9fc821f0bbd642720d4fd480f00293c2203e633a (origin/master)
+[workspace] $ /bin/sh -xe /tmp/hudson3259038915026087238.sh
++ phing test
+[00;36mBuildfile: /var/lib/jenkins/jobs/php_fitnesse_test/workspace/build.xml[0m
+[00;32m
+php_fitnesse_test > test:
+[0m
+[01;31mExecution of target "test" failed for the following reason: /var/lib/jenkins/jobs/php_fitnesse_test/workspace/build.xml:5:40: /var/lib/jenkins/jobs/php_fitnesse_test/workspace/build.xml:5:40: PHPUnitTask requires PHPUnit to be installed[0m
+[01;31m
+BUILD FAILED
+/var/lib/jenkins/jobs/php_fitnesse_test/workspace/build.xml:5:40: /var/lib/jenkins/jobs/php_fitnesse_test/workspace/build.xml:5:40: PHPUnitTask requires PHPUnit to be installed
+Total time: 0.2614 seconds
+[0m
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

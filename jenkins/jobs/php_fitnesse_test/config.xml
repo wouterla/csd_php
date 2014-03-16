@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@2.0.4">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/wouterla/php_fitnesse_test.git</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>phpunit --include-path ./src --log-junit phpunit.xml --coverage-clover clover.xml test
+</command>
+    </hudson.tasks.Shell>
+    <hudson.plugins.fitnesse.FitnesseBuilder plugin="fitnesse@1.8.1">
+      <options>
+        <entry>
+          <string>fitnesseTargetPage</string>
+          <string>PhpFitnesseTestSuite</string>
+        </entry>
+        <entry>
+          <string>fitnesseTargetIsSuite</string>
+          <string>true</string>
+        </entry>
+        <entry>
+          <string>fitnesseHost</string>
+          <string>localhost</string>
+        </entry>
+        <entry>
+          <string>fitnesseTestTimeout</string>
+          <string>60000</string>
+        </entry>
+        <entry>
+          <string>fitnesseHttpTimeout</string>
+          <string>60000</string>
+        </entry>
+        <entry>
+          <string>fitnessePortRemote</string>
+          <string>8081</string>
+        </entry>
+        <entry>
+          <string>fitnesseStart</string>
+          <string>False</string>
+        </entry>
+        <entry>
+          <string>fitnessePathToXmlResultsOut</string>
+          <string>fitnesse.xml</string>
+        </entry>
+      </options>
+    </hudson.plugins.fitnesse.FitnesseBuilder>
+  </builders>
+  <publishers>
+    <org.jenkinsci.plugins.cloverphp.CloverPHPPublisher plugin="cloverphp@0.3.3">
+      <publishHtmlReport>true</publishHtmlReport>
+      <reportDir>clover_html</reportDir>
+      <xmlLocation>clover.xml</xmlLocation>
+      <disableArchiving>false</disableArchiving>
+      <healthyTarget>
+        <methodCoverage>70</methodCoverage>
+        <statementCoverage>80</statementCoverage>
+      </healthyTarget>
+      <unhealthyTarget/>
+      <failingTarget/>
+    </org.jenkinsci.plugins.cloverphp.CloverPHPPublisher>
+    <hudson.plugins.fitnesse.FitnesseResultsRecorder plugin="fitnesse@1.8.1">
+      <fitnessePathToXmlResultsIn>fitnesse.xml</fitnessePathToXmlResultsIn>
+    </hudson.plugins.fitnesse.FitnesseResultsRecorder>
+    <hudson.tasks.junit.JUnitResultArchiver>
+      <testResults>phpunit.xml</testResults>
+      <keepLongStdio>false</keepLongStdio>
+      <testDataPublishers/>
+    </hudson.tasks.junit.JUnitResultArchiver>
+  </publishers>
+  <buildWrappers/>
+</project>

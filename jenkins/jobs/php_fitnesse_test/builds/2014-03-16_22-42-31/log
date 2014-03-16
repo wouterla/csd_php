@@ -1,0 +1,13 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /var/lib/jenkins/jobs/php_fitnesse_test/workspace
+Fetching changes from the remote Git repository
+Fetching upstream changes from https://github.com/wouterla/php_fitnesse_test.git
+Checking out Revision 9fc821f0bbd642720d4fd480f00293c2203e633a (origin/master)
+[workspace] $ /bin/sh -xe /tmp/hudson4766985737210666816.sh
++ phpunit --include-path ./src --log-junit phpunit.xml --coverage-clover clover.xml test
+PHP Parse error:  syntax error, unexpected T_STRING in /var/lib/jenkins/jobs/php_fitnesse_test/workspace/test/SimpleTest.php on line 5
+Build step 'Execute shell' marked build as failure
+Publishing Clover coverage report...
+No Clover report will be published due to a Build Failure
+Recording test results
+Finished: FAILURE

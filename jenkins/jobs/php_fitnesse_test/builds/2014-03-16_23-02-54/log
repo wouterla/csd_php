@@ -1,0 +1,209 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /var/lib/jenkins/jobs/php_fitnesse_test/workspace
+Fetching changes from the remote Git repository
+Fetching upstream changes from https://github.com/wouterla/php_fitnesse_test.git
+Checking out Revision 9a16614c846d2faa5899548a2b866c0ab76fe3be (origin/master)
+[workspace] $ /bin/sh -xe /tmp/hudson6222372488555384242.sh
++ phpunit --include-path ./src --log-junit phpunit.xml --coverage-clover clover.xml test
+PHPUnit 4.0.7 by Sebastian Bergmann.
+
+Configuration read from /var/lib/jenkins/jobs/php_fitnesse_test/workspace/phpunit.xml
+
+.
+
+Time: 423 ms, Memory: 8.50Mb
+
+OK (1 test, 1 assertion)
+
+Generating code coverage report in Clover XML format ... done
+hudson.plugins.fitnesse.FitnesseBuilder: {fitnesseTargetPage=PhpFitnesseTest, fitnesseTargetIsSuite=false, fitnesseHost=localhost, fitnesseTestTimeout=, fitnesseHttpTimeout=, fitnessePortRemote=8081, fitnesseStart=False, fitnessePathToXmlResultsOut=fitnesse.xml}
+Connnecting to http://localhost:8081/PhpFitnesseTest?test&format=xml&includehtml
+Connected: 404/Not Found
+java.io.FileNotFoundException: http://localhost:8081/PhpFitnesseTest?test&format=xml&includehtml
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1675)
+	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1673)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1671)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1244)
+	at hudson.plugins.fitnesse.FitnesseExecutor.getHttpBytes(FitnesseExecutor.java:227)
+	at hudson.plugins.fitnesse.FitnesseExecutor$1.run(FitnesseExecutor.java:202)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: java.io.FileNotFoundException: http://localhost:8081/PhpFitnesseTest?test&format=xml&includehtml
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1624)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:468)
+	at hudson.plugins.fitnesse.FitnesseExecutor.getHttpBytes(FitnesseExecutor.java:225)
+	... 2 more
+Xml results saved as ISO-8859-1 to /var/lib/jenkins/jobs/php_fitnesse_test/workspace/fitnesse.xml
+Publishing Clover coverage report...
+Publishing Clover XML report...
+Publishing Clover coverage results...
+Reading results as ISO-8859-1 from /var/lib/jenkins/jobs/php_fitnesse_test/workspace/fitnesse.xml
+Parsing results... 
+javax.xml.transform.TransformerException: javax.xml.transform.TransformerException: com.sun.org.apache.xml.internal.utils.WrappedRuntimeException: Premature end of file.
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.transform(TransformerImpl.java:758)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.transform(TransformerImpl.java:359)
+	at hudson.plugins.fitnesse.NativePageCountsParser.transformRawResults(NativePageCountsParser.java:25)
+	at hudson.plugins.fitnesse.NativePageCountsParser.parse(NativePageCountsParser.java:17)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.getResults(FitnesseResultsRecorder.java:131)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.getResults(FitnesseResultsRecorder.java:109)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.perform(FitnesseResultsRecorder.java:73)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:804)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:776)
+	at hudson.model.Build$BuildExecution.post2(Build.java:183)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:725)
+	at hudson.model.Run.execute(Run.java:1701)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:231)
+Caused by: javax.xml.transform.TransformerException: com.sun.org.apache.xml.internal.utils.WrappedRuntimeException: Premature end of file.
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.getDOM(TransformerImpl.java:587)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.transform(TransformerImpl.java:748)
+	... 15 more
+Caused by: com.sun.org.apache.xml.internal.utils.WrappedRuntimeException: Premature end of file.
+	at com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager.getDTM(XSLTCDTMManager.java:464)
+	at com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager.getDTM(XSLTCDTMManager.java:252)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.getDOM(TransformerImpl.java:565)
+	... 16 more
+---------
+javax.xml.transform.TransformerException: com.sun.org.apache.xml.internal.utils.WrappedRuntimeException: Premature end of file.
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.getDOM(TransformerImpl.java:587)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.transform(TransformerImpl.java:748)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.transform(TransformerImpl.java:359)
+	at hudson.plugins.fitnesse.NativePageCountsParser.transformRawResults(NativePageCountsParser.java:25)
+	at hudson.plugins.fitnesse.NativePageCountsParser.parse(NativePageCountsParser.java:17)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.getResults(FitnesseResultsRecorder.java:131)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.getResults(FitnesseResultsRecorder.java:109)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.perform(FitnesseResultsRecorder.java:73)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:804)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:776)
+	at hudson.model.Build$BuildExecution.post2(Build.java:183)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:725)
+	at hudson.model.Run.execute(Run.java:1701)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:231)
+Caused by: com.sun.org.apache.xml.internal.utils.WrappedRuntimeException: Premature end of file.
+	at com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager.getDTM(XSLTCDTMManager.java:464)
+	at com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager.getDTM(XSLTCDTMManager.java:252)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.getDOM(TransformerImpl.java:565)
+	... 16 more
+---------
+com.sun.org.apache.xml.internal.utils.WrappedRuntimeException: Premature end of file.
+	at com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager.getDTM(XSLTCDTMManager.java:464)
+	at com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager.getDTM(XSLTCDTMManager.java:252)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.getDOM(TransformerImpl.java:565)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.transform(TransformerImpl.java:748)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.transform(TransformerImpl.java:359)
+	at hudson.plugins.fitnesse.NativePageCountsParser.transformRawResults(NativePageCountsParser.java:25)
+	at hudson.plugins.fitnesse.NativePageCountsParser.parse(NativePageCountsParser.java:17)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.getResults(FitnesseResultsRecorder.java:131)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.getResults(FitnesseResultsRecorder.java:109)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.perform(FitnesseResultsRecorder.java:73)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:804)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:776)
+	at hudson.model.Build$BuildExecution.post2(Build.java:183)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:725)
+	at hudson.model.Run.execute(Run.java:1701)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:231)
+---------
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1019)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager.getDTM(XSLTCDTMManager.java:458)
+	at com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager.getDTM(XSLTCDTMManager.java:252)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.getDOM(TransformerImpl.java:565)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.transform(TransformerImpl.java:748)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.transform(TransformerImpl.java:359)
+	at hudson.plugins.fitnesse.NativePageCountsParser.transformRawResults(NativePageCountsParser.java:25)
+	at hudson.plugins.fitnesse.NativePageCountsParser.parse(NativePageCountsParser.java:17)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.getResults(FitnesseResultsRecorder.java:131)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.getResults(FitnesseResultsRecorder.java:109)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.perform(FitnesseResultsRecorder.java:73)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:804)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:776)
+	at hudson.model.Build$BuildExecution.post2(Build.java:183)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:725)
+	at hudson.model.Run.execute(Run.java:1701)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:231)
+---------
+com.sun.org.apache.xml.internal.utils.WrappedRuntimeException: Premature end of file.
+	at com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager.getDTM(XSLTCDTMManager.java:464)
+	at com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager.getDTM(XSLTCDTMManager.java:252)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.getDOM(TransformerImpl.java:565)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.transform(TransformerImpl.java:748)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.transform(TransformerImpl.java:359)
+	at hudson.plugins.fitnesse.NativePageCountsParser.transformRawResults(NativePageCountsParser.java:25)
+	at hudson.plugins.fitnesse.NativePageCountsParser.parse(NativePageCountsParser.java:17)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.getResults(FitnesseResultsRecorder.java:131)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.getResults(FitnesseResultsRecorder.java:109)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.perform(FitnesseResultsRecorder.java:73)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:804)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:776)
+	at hudson.model.Build$BuildExecution.post2(Build.java:183)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:725)
+	at hudson.model.Run.execute(Run.java:1701)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:231)
+---------
+org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1019)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager.getDTM(XSLTCDTMManager.java:458)
+	at com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager.getDTM(XSLTCDTMManager.java:252)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.getDOM(TransformerImpl.java:565)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.transform(TransformerImpl.java:748)
+	at com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl.transform(TransformerImpl.java:359)
+	at hudson.plugins.fitnesse.NativePageCountsParser.transformRawResults(NativePageCountsParser.java:25)
+	at hudson.plugins.fitnesse.NativePageCountsParser.parse(NativePageCountsParser.java:17)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.getResults(FitnesseResultsRecorder.java:131)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.getResults(FitnesseResultsRecorder.java:109)
+	at hudson.plugins.fitnesse.FitnesseResultsRecorder.perform(FitnesseResultsRecorder.java:73)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:804)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:776)
+	at hudson.model.Build$BuildExecution.post2(Build.java:183)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:725)
+	at hudson.model.Run.execute(Run.java:1701)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:88)
+	at hudson.model.Executor.run(Executor.java:231)
+Build step 'Publish Fitnesse results report' changed build result to FAILURE
+Build step 'Publish Fitnesse results report' marked build as failure
+Recording test results
+Finished: FAILURE

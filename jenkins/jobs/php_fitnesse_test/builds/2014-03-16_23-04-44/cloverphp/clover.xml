@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1395011087">
+  <project timestamp="1395011087">
+    <file name="/var/lib/jenkins/jobs/php_fitnesse_test/workspace/src/SimpleTruth.php">
+      <class name="SimpleTruth" namespace="global">
+        <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+      </class>
+      <line num="4" type="method" name="sayItsTrue" crap="1" count="1"/>
+      <line num="5" type="stmt" count="1"/>
+      <metrics loc="7" ncloc="7" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+    </file>
+    <metrics files="1" loc="7" ncloc="7" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
+  </project>
+</coverage>
